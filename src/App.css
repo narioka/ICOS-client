@@ -1,0 +1,382 @@
+header {
+    background: rgb(238, 236, 225);
+    display: flex;
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 10px;
+}
+
+button {
+    margin: 10px 5px 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+button:focus {
+    outline: none;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+input:focus {
+    outline: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    padding-bottom: 0px;
+}
+
+.nav-menu-item {
+    list-style: none;
+}
+
+.nav-menu-item a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-size: 10pt;
+    width: 100px;
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #1B1B1B;
+    background: rgb(238, 236, 225);
+    border: 0px;
+}
+
+.nav-menu-item a:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+.acd-check {
+    display: none;
+}
+
+.acd-label {
+    margin-left: 40px;
+    padding: 10px 10px;
+    font-size: 10pt;
+    color: #1B1B1B;
+    display: block;
+    float: left;
+    width: 98px;
+    cursor: pointer;
+}
+
+.acd-label:hover {
+    background: #fff;
+}
+
+.acd-content {
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.acd-content li {
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+}
+
+.acd-check:checked+.acd-label+.acd-content {
+    height: 140px;
+    opacity: 1;
+    padding: 30px;
+    visibility: visible;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper .container {
+    max-width: 100%;
+    margin: 0px 0px;
+    padding: 50px 100px;
+}
+
+.wrapper .content {
+    padding-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.wrapper .content#login {
+    border-radius: 20px;
+    width: 50%;
+    height: 300px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 0px;
+    background: rgb(238, 236, 225);
+}
+
+.wrapper .content .heading {
+    margin: 0px 0px 40px 0px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.wrapper .content .heading#login {
+    margin-bottom: 0px;
+}
+
+.wrapper .content .heading#login h1 {
+    margin-bottom: 0;
+}
+
+.wrapper .content#login form .error-msg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 325px;
+}
+
+.wrapper .content input {
+    margin: 0px 0px 0px 0px;
+    width: 60%;
+    height: 25px;
+    font-size: 15px;
+    border: 1px solid rgb(139, 139, 139);
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .wrapper .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.wrapper .content .list-item {
+    margin: 50px 0px 0px 0px;
+    padding: 0px 50px;
+    border-radius: 60px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .wrapper .content .list-item {
+        margin: 0px;
+        width: calc(100% / 3);
+    }
+}
+
+.wrapper .content .list-item .image {
+    display: block;
+    width: 90%;
+    max-width: 320px;
+    margin: 0px auto 0px auto;
+}
+
+.wrapper .content .list-item a {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    color: #666666;
+    text-decoration: none;
+}
+
+.list-item:hover {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .content#login button {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #000;
+    font-size: 0.5em;
+    padding: 7px 10px;
+}
+
+.wrapper .content#login button:hover {
+    background: rgb(246, 246, 246);
+}
+
+.inOut-box {
+    width: 100%;
+}
+
+.inout-box .container {
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.inOut-box .content {
+    margin-top: 100px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.inOut-box .content h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.content .add-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    text-align: center;
+}
+
+.content .add-form dl {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .add-form dt {
+    text-align: left;
+    width: 120px;
+}
+
+.content .add-form dt::after {
+    float: right;
+    margin-right: 10px;
+    padding: 0 1em 0 1em;
+    content: "必須";
+    font-size: 0.3em;
+    color: white;
+    background-color: rgb(255, 206, 71);
+}
+
+.content .add-form dd {
+    text-align: left;
+    margin-inline-start: 0;
+}
+
+.content .add-form input {
+    height: 30px;
+}
+
+.content .add-form input:invalid {
+    border: 3px solid rgb(255, 63, 29);
+}
+
+.content .add-form input:invalid~.errorMessage {
+    display: block;
+    font-size: small;
+    color: rgb(165, 165, 165);
+}
+
+.content .add-form input:invalid~.errorMessage::before {
+    content: '※';
+    color: tomato;
+}
+
+.content .add-form input:valid {
+    border: 3px solid rgb(29, 255, 78);
+}
+
+.content .add-form input:valid~.errorMessage {
+    display: none;
+}
+
+.content .add-form .responseError:empty {
+    display: none;
+}
+
+.content .add-form .responseError {
+    height: auto;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 5px;
+    border: 3px solid;
+    border-radius: 10px;
+    color: rgb(248, 79, 79);
+}
+.content .add-form .responseError span{
+    display: block;
+}
+
+.content button {
+    width: auto;
+    font-size: 1em;
+    border: 1.5px solid rgb(136, 136, 136);
+}
+
+.content button:hover {
+    background: rgb(136, 136, 136);
+    color: rgb(255, 255, 255);
+}
+
+.list-form table {
+    text-align: center;
+    width: 95%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-form table th {
+    position: sticky;
+    top: 91px;
+    background-color: rgb(185, 182, 182);
+}
+
+.list-form table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.list-form table tr:nth-child(even) {
+    background-color: #fff
+}
+
+.ReactModalPortal {
+    text-align: center;
+}
+
+.ReactModalPortal p {
+    font-size: 25px;
+}
+
+.confirm-modal button {
+    font-size: 20px;
+    border: 4px solid;
+}
+
+.confirm-modal button#in {
+    border-color: rgb(128, 208, 240);
+    background: rgb(128, 208, 240);
+}
+
+.confirm-modal button#in:hover {
+    color: rgb(128, 208, 240);
+    background: rgb(255, 255, 255);
+}
+
+.confirm-modal button#out {
+    border-color: rgb(240, 128, 128);
+    background: rgb(240, 128, 128);
+}
+
+.confirm-modal button#out:hover {
+    color: rgb(240, 128, 128);
+    background: rgb(255, 255, 255);
+}
+
+.ReactModalPortal button:hover {
+    background: rgb(136, 136, 136);
+    color: rgb(255, 255, 255);
+}
