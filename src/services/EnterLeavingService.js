@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://Icos-env.eba-d3wy2bpd.ap-northeast-1.elasticbeanstalk.com/icos/api/enterLeaving/';
+const API_URL = 'https://icos.tokyo/icos/api/enterLeaving/';
 
 class EnterLeavingService {
 
