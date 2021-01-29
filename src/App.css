@@ -252,7 +252,7 @@ input:focus {
     float: right;
     margin-right: 10px;
     padding: 0 1em 0 1em;
-    content: "必須";
+    content: "\5FC5\9808";
     font-size: 0.3em;
     color: white;
     background-color: rgb(255, 206, 71);
@@ -278,7 +278,7 @@ input:focus {
 }
 
 .content .add-form input:invalid~.errorMessage::before {
-    content: '※';
+    content: '\203B';
     color: tomato;
 }
 
