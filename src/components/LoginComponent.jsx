@@ -33,7 +33,7 @@ export default class LoginComponent extends React.Component {
         AuthService.login(loginInfo).then(response => {
             if (response.data.errorInfo != null) {
                 response.data.errorInfo.forEach(e => {
-                    if (e.errorId === "SE*") {
+                    if (e.errorId.indexOf("SE") !== -1) {
                         this.props.history.push("/icos/error")
                     }
                 })
