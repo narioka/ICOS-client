@@ -252,7 +252,7 @@ input:focus {
     float: right;
     margin-right: 10px;
     padding: 0 1em 0 1em;
-    content: "\5FC5\9808";
+    content: "必須";
     font-size: 0.3em;
     color: white;
     background-color: rgb(255, 206, 71);
@@ -278,7 +278,7 @@ input:focus {
 }
 
 .content .add-form input:invalid~.errorMessage::before {
-    content: '\203B';
+    content: '※';
     color: tomato;
 }
 
@@ -287,6 +287,29 @@ input:focus {
 }
 
 .content .add-form input:valid~.errorMessage {
+    display: none;
+}
+
+.content .add-form select:invalid {
+    border: 3px solid rgb(255, 63, 29);
+}
+
+.content .add-form select:invalid~.errorMessage {
+    display: block;
+    font-size: small;
+    color: rgb(165, 165, 165);
+}
+
+.content .add-form select:invalid~.errorMessage::before {
+    content: '※';
+    color: tomato;
+}
+
+.content .add-form select:valid {
+    border: 3px solid rgb(29, 255, 78);
+}
+
+.content .add-form select:valid~.errorMessage {
     display: none;
 }
 
@@ -304,7 +327,8 @@ input:focus {
     border-radius: 10px;
     color: rgb(248, 79, 79);
 }
-.content .add-form .responseError span{
+
+.content .add-form .responseError span {
     display: block;
 }
 
@@ -330,8 +354,6 @@ input:focus {
 }
 
 .list-form table th {
-    position: sticky;
-    top: 91px;
     background-color: rgb(185, 182, 182);
 }
 
@@ -341,6 +363,43 @@ input:focus {
 
 .list-form table tr:nth-child(even) {
     background-color: #fff
+}
+
+.list-form .responseError:empty {
+    display: none;
+}
+
+.list-form .responseError {
+    height: auto;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 5px;
+    border: 3px solid;
+    border-radius: 10px;
+    color: rgb(248, 79, 79);
+}
+
+.list-form .responseError span {
+    display: block;
+}
+
+.list-form label {
+    color: rgb(165, 165, 165);
+    margin-left: 2.0px;
+    margin-right: 2.0px;
+    padding: 2.5px;
+    cursor: pointer;
+}
+
+.list-form input[type="radio"] {
+    display: none;
+}
+
+.list-form input[type="radio"]:checked+label {
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: #c0a867;
 }
 
 .ReactModalPortal {

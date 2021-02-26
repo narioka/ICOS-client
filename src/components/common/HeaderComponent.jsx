@@ -50,7 +50,7 @@ class HeaderComponent extends React.Component {
                         }
                         {mainMenuIsOpen &&
                             <li className="nav-menu-item">
-                                <Link to="/icos/enterLeavingHitory">入出庫履歴</Link>
+                                <Link to="/icos/enterLeavingHistory">入出庫履歴</Link>
                             </li>
                         }
                         {mainMenuIsOpen &&
